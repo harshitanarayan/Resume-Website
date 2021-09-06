@@ -1,0 +1,638 @@
+body, html, * {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+:root {
+    --resume-color-theme: #18537a;
+}
+
+/* #2857a4 */
+
+/* body-header */
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+    padding-top: 10px;
+}
+
+/* Horizontal List */
+.horizontal-list {
+    padding: 0%;
+    margin: 0%;
+}
+
+.bars{
+    color: white;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list {
+    display: none;    /* Initially the dropdown-list should not be visible. Only visible on hover */
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul {
+    margin: 0.2rem 0.2rem;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-list li {
+    margin: 0.4rem 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: left;  
+}
+
+.dropdown-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu:hover .dropdown-list {
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 0px 8px;
+    margin-top: 10px;   
+}
+
+.horizontal-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons */
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px lightgray;
+    border-bottom: none;
+}
+
+/* Main */
+
+/* General for section */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n+1) {
+    background-color: white;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(228, 225, 225);
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    color: var(--resume-color-theme);
+    font-size: 40px;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* About Section*/
+#about {
+    /* Sets height of the about section as per requirement and complete width is occupied */
+    height: auto;     
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    /* margin: auto; */
+    margin-top: -100px
+}
+
+#my-image div {
+    border: 1px solid red;
+}
+
+div.text-center {
+    display:block;
+    margin: auto;
+}
+
+#my-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 6px 4px lightgray;
+}
+
+#about p {
+    width: 70%;
+    text-align: justify;
+    padding: 10px;
+    color: grey;
+    font-size: 1.1rem;
+    line-height: 28px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#about span {
+    color: var(--resume-color-theme);
+    font-weight: 600;
+}
+
+/* Skills Section */
+
+.skills-display {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.skill-progress {
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    background-color: lightgrey;
+    width: 7rem;
+    height: 1.4rem;
+    margin: 20px;
+}
+
+/* Makes changes to the direct child of the class */
+.skill-progress>div {
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.skill-name span {
+    color: white;
+    margin-left: 10px;
+
+}
+
+/* Common margin classes */
+.mb50px {
+    margin-bottom: 50px;
+}
+
+.mb20px {
+    margin-bottom: 20px;
+}
+
+/* Common color classes */
+
+.text-highlight {
+    color: var(--resume-color-theme);
+    font-weight: 600;
+}
+
+.m-blue {
+    color: var(--resume-color-theme);
+}
+
+.mb-blue {
+    background-color: var(--resume-color-theme);
+}
+
+.mb-orange {
+    background-color: orange;
+}
+
+.mb-green {
+    background-color: green;
+}
+
+.mb-violet {
+    background-color: violet;
+}
+
+.mb-white {
+    color: white;
+}
+
+.mb-grey {
+    color:rgb(224, 225, 235);
+}
+
+/* Percentage classes */
+
+.eighty-five-percent {
+    width: 85%;
+    height: inherit;
+}
+
+.sixty-percent {
+    width: 60%;
+    height: inherit;
+}
+
+.ninety-percent {
+    width: 90%;
+    height: inherit;
+    border-radius: 0rem 0.3rem 0.3rem 0rem;
+}
+
+.fourty-five-percent {
+    width: 45%;
+    height: inherit;
+}
+
+/* Portfolio section */
+
+.portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;   /* Why posiiton relative */
+    margin: 30px;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;   /* Takes 100% width of the parent div i.e. portfolio-image-container*/
+}
+
+.portfolio-details {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    color: transparent;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    color: white;
+    background-color: #80808078;
+}
+
+.portfolio-details p {
+    margin: 50px 0px;
+    font-size: 30px;
+}
+
+/* Contact Section */
+
+#contact {
+    background: linear-gradient(50deg, var(--resume-color-theme) 0%, #403066 74%);
+    padding-bottom: 40px;
+    color: white;
+}
+
+/* .contact-container-background {
+    background: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+} */
+
+#contact-heading span{
+    color:white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0px 50px;
+}
+
+.contact-container-sub-div {
+    width: 45%;
+    margin-left: 40px;
+}
+
+.contact-input-container {
+    display: block;
+    width: 90%;
+    border: 0px;
+    border-bottom: 2px solid white !important;
+    font-size: 0.9rem;
+    background: transparent;
+    /* margin: 15px; */
+    padding: 4px 10px;
+}
+
+.contact-container-sub-div input, textarea {
+    height: 35px;
+    margin: 5px;
+    color: white;
+}
+
+.contact-container-sub-div input::placeholder {
+    position: relative;
+    top: 20%;
+}
+
+.contact-container-sub-div h3{
+    font-weight: 550;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    font-family: sans-serif;
+}
+
+.contact-container-sub-div p{
+    padding-right: 13px;
+}
+
+.contact-container-sub-div span {
+    margin-left: 0.4rem;
+}
+
+/* #contact-message {
+    color: white;
+} */
+
+#contact-button {
+    display: block;
+    padding: 10px;
+    color:white;
+    background: transparent;
+    border: 2px solid white;
+    margin: auto; /* puts margin from left and right at 50%*/
+    margin-top: 45px;
+    font-size: 0.95rem;  
+    border-radius: 2px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+}
+
+#contact-button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.to-top-conatiner {
+    position: absolute;
+    right: 3%;
+    font-size: 2.2rem;
+}
+
+.to-top-conatiner a {
+    color: white;
+}
+
+/* Experience */
+
+.timeline {
+    width: 75%;
+    position: relative;
+    /* border: 2px solid black; */
+    margin-bottom: 40px;
+}
+
+.timeline-box {
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    padding: 5px;
+    text-align: right;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: lightgrey;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11%;
+    
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -8%;
+}
+
+.timeline-divider {
+    height: 66%;
+    width: 0px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b; 
+}
+
+.timeline-icon {
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    color: var(--resume-color-theme);
+    z-index: 2;
+}
+
+.timeline-container {
+    margin: 5px;
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    color: #eb822d;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.experience-duration {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 100;
+}
+
+.experience-description {
+    margin: 14px 0px;
+    padding: 2px;
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.timeline-icon i {
+    transform: scale(1.7); /*zooms in the icon instead of increasing its width and height*/
+}
+
+/* Education */
+
+#edu-icon {
+    transform: rotate(0deg);
+    margin-left: -6px;
+}
+
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .nav-menu {
+        display: none;
+    } 
+
+    .bars {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;  
+    }
+
+    .timeline-divider {
+        left: 2%;
+    } 
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    #contact-container-sub-div {
+        width: 100%; 
+    }
+
+    .contact-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-container-sub-div {
+        width: 80%;
+        margin: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
